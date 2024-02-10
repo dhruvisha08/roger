@@ -1,0 +1,66 @@
+@import "src/shared/_variables.scss";
+
+.navbar-container {
+  background-color: $white;
+  padding: 0 30px 0 18px;
+  display: flex;
+  justify-content: space-between;
+  .categories-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 50px;
+      color: $black;
+      font-size: 20px;
+      font-family: "Cabin", sans-serif;
+      font-weight: 500;
+      .nav-menu li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        cursor: pointer;
+        font-size: 25px;
+      }
+      .quick-link {
+        text-decoration: none;
+        color: $black;
+        font-size: 18px;
+        padding-bottom: 10px;
+      }
+      .active {
+        border-bottom: 2px solid $black;
+      }
+    }
+  }
+  .cta-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .margin-right {
+      margin-right: 20px;
+    }
+    .search-container {
+      background-color: $white-smoke;
+      border-radius: 20px;
+      padding: 4px 10px;
+      margin-top: 4px;
+      .search-input {
+        border: none;
+        width: 100px;
+        background-color: transparent;
+        margin-left: 10px;
+        outline: none;
+      }
+    }
+    .icon {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}

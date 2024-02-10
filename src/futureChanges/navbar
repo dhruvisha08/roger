@@ -1,0 +1,113 @@
+<div className="categories-container">
+  <div className="dropdown">
+    <div
+      className="category-name  dropdown-toggle"
+      id="newDropdownMenu"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      {" "} New & Featured
+    </div>
+    <div className="dropdown-menu" aria-labelledby="newDropdownMenu">
+      <div className="new-category-container d-flex w-100">
+        <div className="sub-category">
+          <div className="title">New & Featured</div>
+          <div className="link">New Arrivals</div>
+          <div className="link">Latest Shoes</div>
+          <div className="link">Latest Clothing</div>
+        </div>
+        <div className="sub-category">
+          <div className="title">New for Men</div>
+          <div className="link">Shoes</div>
+          <div className="link">Clothing</div>
+        </div>
+        <div className="sub-category">
+          <div className="title">New for Women</div>
+          <div className="link">Shoes</div>
+          <div className="link">Clothing</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div className="dropdown">
+    <div
+      className="category-name  dropdown-toggle"
+      id="womenDropdownMenu"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      {" "} Women
+    </div>
+  </div>
+  <div className="dropdown">
+    <div
+      className="category-name  dropdown-toggle"
+      id="menDropdownMenu"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      {" "} Men
+    </div>
+  </div>
+  <div className="dropdown">
+    <div
+      className="category-name  dropdown-toggle"
+      id="saleDropdownMenu"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      {" "} Sale
+    </div>
+  </div>
+</div>
+
+
+//scss
+
+.categories-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+  .dropdown {
+    .dropdown-toggle::after {
+      content: none;
+    }
+    .category-name {
+      padding: 0 15px;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 2px solid $black;
+      }
+    }
+    .dropdown-menu {
+      border: none;
+      border-radius: 0;
+      right: auto;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+    }
+  }
+  .sub-category {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 35px 0 35px;
+    .title {
+      color: $black;
+      margin-bottom: 5px;
+      white-space: nowrap;
+      text-align: left;
+    }
+    .link {
+      color: $gray;
+      white-space: nowrap;
+      text-align: left;
+      cursor: pointer;
+    }
+  }
+}

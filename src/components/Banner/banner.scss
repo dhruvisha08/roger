@@ -1,0 +1,21 @@
+@import "../../shared/variables";
+
+.banner-container {
+  background-color: $white-smoke;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .banner-content {
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-size: 15px;
+      text-align: center;
+    }
+    .sub-title {
+      font-size: 10px;
+      text-decoration: underline;
+    }
+  }
+}

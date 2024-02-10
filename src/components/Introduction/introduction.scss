@@ -1,0 +1,17 @@
+.introduction-container {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .tagline-text {
+    text-align: center;
+    margin-top: 50px;
+    .title {
+      font-weight: 900;
+      font-size: 35px;
+    }
+    .sub-title {
+      font-size: 20px;
+    }
+  }
+}
