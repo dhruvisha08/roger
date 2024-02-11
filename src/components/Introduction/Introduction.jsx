@@ -1,6 +1,5 @@
 import React from "react";
 import Banner from "../Banner/Banner.jsx";
-import video from "../../assets/video.mp4";
 import "./introduction.scss";
 
 const Introduction = () => {
@@ -8,7 +7,9 @@ const Introduction = () => {
     <>
       <Banner />
       <div className="introduction-container">
-        <video controls="controls" autoplay="true" src={video}></video>
+        <div className="video-container">
+          VIDEO OR IMAGES SLIDER
+        </div>
         <div className="tagline-text">
           <div className="title">SOME MOTIVATIONAL LINE</div>
           <div className="sub-title">FOLLOWED BY SOMETHING POWERFUL</div>

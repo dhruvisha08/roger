@@ -1,13 +1,10 @@
 import React from "react";
-import headerLogo from "../../assets/headerLogo.svg";
 import "./header.scss";
 
 const Header = () => {
   return (
     <div className="header-container">
-      <div className="header-logo">
-        <img src={headerLogo} height="24px" width="24px" />
-      </div>
+      <div className="header-logo"></div>
       <div className="header-cta-container">
         <div className="dropdown dropleft">
           <div

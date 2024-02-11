@@ -2,7 +2,16 @@
   padding: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
+  .video-container{
+    height: 600px;
+    width: 1200px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center
+  }
   .tagline-text {
     text-align: center;
     margin-top: 50px;

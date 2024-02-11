@@ -1,5 +1,5 @@
 import React from "react";
-import navBarLogo from "../../assets/navbarLogo.svg";
+import navBarLogo from "../../assets/navbarLogo.jpg";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
 import { RiShoppingBag2Line } from "react-icons/ri";
