@@ -1,8 +1,12 @@
 import React from "react";
 import "./productList.scss";
 import { FaIndianRupeeSign } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
+import ProductContext from "../../context/productContext";
 
 const ProductList = ({ productList }) => {
+  const navigate = useNavigate();
+  const { setProduct } = React.useContext(ProductContext);
   return (
     <div className="product-list-container row">
       {productList.map((product) => {
@@ -19,6 +23,15 @@ const ProductList = ({ productList }) => {
             <div className="product-price">
               MRP: <FaIndianRupeeSign /> {product.price}
             </div>
+            <button
+              className="add-to-cart"
+              onClick={() => {
+                navigate(`/${product.id}`);
+                setProduct(product);
+              }}
+            >
+              ADD TO CART
+            </button>
           </div>
         );
       })}
