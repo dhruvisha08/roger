@@ -34,36 +34,35 @@ const Product = () => {
             return <div className="product-size">{size}</div>;
           })}
         </div>
-        <div className="d-flex mt-4">
-          <div className="product-price-container">
-            <div className="product-price-title">PRICE</div>
-            <div className="product-price">
-              <FaIndianRupeeSign /> {product.price}.00
-            </div>
-          </div>
-          <div>
-            <div className="product-quantity-title">QUANTITY</div>
-            <div className="quantity-button d-flex mt-2">
-              <button
-                className="quantity-cta mr-4"
-                onClick={() => {
-                  updateQuantity("remove");
-                }}
-              >
-                -
-              </button>
-              <div className="quantity">{quantity}</div>
-              <button
-                className="quantity-cta ml-4"
-                onClick={() => {
-                  updateQuantity("add");
-                }}
-              >
-                +
-              </button>
-            </div>
+        <div className="product-price-container mt-4">
+          <div className="product-price-title">PRICE</div>
+          <div className="product-price">
+            <FaIndianRupeeSign /> {product.price}.00
           </div>
         </div>
+        <div className="product-quantity-container mt-4">
+          <div className="product-quantity-title">QUANTITY</div>
+          <div className="quantity-button d-flex mt-2">
+            <button
+              className="quantity-cta mr-4"
+              onClick={() => {
+                updateQuantity("remove");
+              }}
+            >
+              -
+            </button>
+            <div className="quantity">{quantity}</div>
+            <button
+              className="quantity-cta ml-4"
+              onClick={() => {
+                updateQuantity("add");
+              }}
+            >
+              +
+            </button>
+          </div>
+        </div>
+        <button className="add-to-cart-cta">ADD TO CART</button>
       </div>
     </div>
   );
